@@ -9,7 +9,7 @@ import UIKit
 import SafariServices
 
 class ViewController: UIViewController {
-    var videos = ["https://www.youtube.com/watch?v=uzEX-WPocX4","https://www.youtube.com/watch?v=jpT-R3TaB64"]
+    var videos = ["https://www.google.com.mx/?hl=es-419"]
     
     @IBOutlet weak var tablaVideos: UITableView!
     

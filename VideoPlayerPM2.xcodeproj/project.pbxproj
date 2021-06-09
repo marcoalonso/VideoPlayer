@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6002F2C92670F6440026E3A3 /* YoutubeHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002F2C82670F6440026E3A3 /* YoutubeHelperViewController.swift */; };
 		6035B937266E545A0054A40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035B936266E545A0054A40C /* AppDelegate.swift */; };
 		6035B939266E545A0054A40C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035B938266E545A0054A40C /* SceneDelegate.swift */; };
 		6035B93B266E545A0054A40C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035B93A266E545A0054A40C /* ViewController.swift */; };
@@ -16,9 +17,12 @@
 		6035B94B266E55E50054A40C /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035B94A266E55E50054A40C /* FullScreenViewController.swift */; };
 		6035B94D266E56410054A40C /* ios15.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6035B94C266E56410054A40C /* ios15.m4v */; };
 		6035B94F266E58130054A40C /* VideoHerramientasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6035B94E266E58130054A40C /* VideoHerramientasViewController.swift */; };
+		E4FBA32799703F7E4EB4C92E /* Pods_VideoPlayerPM2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238AD11DE34489867D4F5EC9 /* Pods_VideoPlayerPM2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		238AD11DE34489867D4F5EC9 /* Pods_VideoPlayerPM2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoPlayerPM2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6002F2C82670F6440026E3A3 /* YoutubeHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeHelperViewController.swift; sourceTree = "<group>"; };
 		6035B933266E545A0054A40C /* VideoPlayerPM2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayerPM2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6035B936266E545A0054A40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6035B938266E545A0054A40C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		6035B94A266E55E50054A40C /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 		6035B94C266E56410054A40C /* ios15.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = ios15.m4v; sourceTree = "<group>"; };
 		6035B94E266E58130054A40C /* VideoHerramientasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHerramientasViewController.swift; sourceTree = "<group>"; };
+		E1882D3BCC373138BD768B07 /* Pods-VideoPlayerPM2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayerPM2.debug.xcconfig"; path = "Target Support Files/Pods-VideoPlayerPM2/Pods-VideoPlayerPM2.debug.xcconfig"; sourceTree = "<group>"; };
+		FF11E09ACA4D2183A6C142C0 /* Pods-VideoPlayerPM2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayerPM2.release.xcconfig"; path = "Target Support Files/Pods-VideoPlayerPM2/Pods-VideoPlayerPM2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FBA32799703F7E4EB4C92E /* Pods_VideoPlayerPM2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52DE7FE24C84F204D11309DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238AD11DE34489867D4F5EC9 /* Pods_VideoPlayerPM2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6035B92A266E54590054A40C = {
 			isa = PBXGroup;
 			children = (
 				6035B935266E545A0054A40C /* VideoPlayerPM2 */,
 				6035B934266E545A0054A40C /* Products */,
+				B1092BDDB73E7AAC99BA9603 /* Pods */,
+				52DE7FE24C84F204D11309DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +89,18 @@
 				6035B944266E545B0054A40C /* Info.plist */,
 				6035B94A266E55E50054A40C /* FullScreenViewController.swift */,
 				6035B94E266E58130054A40C /* VideoHerramientasViewController.swift */,
+				6002F2C82670F6440026E3A3 /* YoutubeHelperViewController.swift */,
 			);
 			path = VideoPlayerPM2;
+			sourceTree = "<group>";
+		};
+		B1092BDDB73E7AAC99BA9603 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1882D3BCC373138BD768B07 /* Pods-VideoPlayerPM2.debug.xcconfig */,
+				FF11E09ACA4D2183A6C142C0 /* Pods-VideoPlayerPM2.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6035B947266E545B0054A40C /* Build configuration list for PBXNativeTarget "VideoPlayerPM2" */;
 			buildPhases = (
+				0BF5A1CCD97F0A33D66FA10D /* [CP] Check Pods Manifest.lock */,
 				6035B92F266E545A0054A40C /* Sources */,
 				6035B930266E545A0054A40C /* Frameworks */,
 				6035B931266E545A0054A40C /* Resources */,
+				B13AED24CC5C82E263377A09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +171,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BF5A1CCD97F0A33D66FA10D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoPlayerPM2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B13AED24CC5C82E263377A09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoPlayerPM2/Pods-VideoPlayerPM2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoPlayerPM2/Pods-VideoPlayerPM2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoPlayerPM2/Pods-VideoPlayerPM2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6035B92F266E545A0054A40C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +220,7 @@
 			files = (
 				6035B93B266E545A0054A40C /* ViewController.swift in Sources */,
 				6035B937266E545A0054A40C /* AppDelegate.swift in Sources */,
+				6002F2C92670F6440026E3A3 /* YoutubeHelperViewController.swift in Sources */,
 				6035B939266E545A0054A40C /* SceneDelegate.swift in Sources */,
 				6035B94F266E58130054A40C /* VideoHerramientasViewController.swift in Sources */,
 				6035B94B266E55E50054A40C /* FullScreenViewController.swift in Sources */,
@@ -295,6 +367,7 @@
 		};
 		6035B948266E545B0054A40C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1882D3BCC373138BD768B07 /* Pods-VideoPlayerPM2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +387,7 @@
 		};
 		6035B949266E545B0054A40C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF11E09ACA4D2183A6C142C0 /* Pods-VideoPlayerPM2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

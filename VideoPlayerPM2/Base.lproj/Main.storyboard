@@ -54,6 +54,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c5m-uZ-3vE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O3P-sS-dn9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -61,11 +62,84 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NZk-C3-Opp"/>
                         <segue destination="5GU-85-ec0" kind="relationship" relationship="viewControllers" id="fnR-uB-ztZ"/>
                         <segue destination="nDh-nZ-IVf" kind="relationship" relationship="viewControllers" id="tey-MY-Uny"/>
+                        <segue destination="HaJ-c7-pu6" kind="relationship" relationship="viewControllers" id="w0g-pm-W7q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCk-PU-djl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4bu-Lp-JSb">
+            <objects>
+                <viewController id="HaJ-c7-pu6" customClass="YoutubeHelperViewController" customModule="VideoPlayerPM2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LUe-vU-xe5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-Wb-6Hh">
+                                <rect key="frame" x="20" y="54" width="374" height="729"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carne en su jugo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geG-3s-3cw">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bO8-Cy-eCr">
+                                        <rect key="frame" x="0.0" y="48.5" width="374" height="370.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <mutableString key="text">500 gramos de tocino
+1 kilo de bistec de res
+4 tomates verdes
+2 dientes de ajo
+2 chiles serranos
+1/2 cebollas
+1 cucharada de consomé de pollo en polvo
+2 tazas de frijol negro, de la olla
+sal, al gusto
+pimienta negra, al gusto
+cilantro fresco, picado al gusto
+cebollas, picada al gusto
+aceite vegetal, cantidad necesaria
+Preparación
+Seca el bistec con las Servitoallas® Pétalo®, salpimiéntalo y córtalo en cuadros pequeños.
+Corta el tocino, agrégalo a una olla caliente con aceite.
+Una vez dorado el tocino, incorpora el bistec. Cocina por 10 minutos.
+Licua el tomate, ajo, chiles, cebolla y consomé de pollo. Agrega un poco de agua. Licúa.
+Agrega la salsa a la carne. Cocina por 20 minutos. Cubre la preparación con Película Autoadherente Pétalo® para evitar que se enfríe.
+Sirve con frijoles, cilantro picado y cebolla picada. Presenta el plato acompañado de Servilletas Pétalo®.</mutableString>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIF-Xz-ecv" customClass="YTPlayerView">
+                                        <rect key="frame" x="0.0" y="429" width="374" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="qFX-3g-qOA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XoK-x4-hdn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YXU-Wb-6Hh" firstAttribute="leading" secondItem="XoK-x4-hdn" secondAttribute="leading" constant="20" id="3rx-7G-wHO"/>
+                            <constraint firstItem="YXU-Wb-6Hh" firstAttribute="top" secondItem="XoK-x4-hdn" secondAttribute="top" constant="10" id="Efi-nz-dYb"/>
+                            <constraint firstItem="XoK-x4-hdn" firstAttribute="trailing" secondItem="YXU-Wb-6Hh" secondAttribute="trailing" constant="20" id="Hzk-q4-s2w"/>
+                            <constraint firstItem="XoK-x4-hdn" firstAttribute="bottom" secondItem="YXU-Wb-6Hh" secondAttribute="bottom" constant="30" id="kks-xr-sgJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="WXH-hW-iQK"/>
+                    <connections>
+                        <outlet property="reproductorYoutubeView" destination="XIF-Xz-ecv" id="BGp-Hw-aLQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ape-HV-00V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1036.231884057971" y="391.07142857142856"/>
         </scene>
         <!--Item-->
         <scene sceneID="3h4-er-Hve">
@@ -101,6 +175,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
